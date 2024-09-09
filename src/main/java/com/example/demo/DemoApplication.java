@@ -7,18 +7,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication implements CommandLineRunner {
+public class DemoApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Autowired
-	private ProductService producer;
+	//@Autowired
+	//private ProductService producer;
 
-	@Override
-	public void run(String... args) throws Exception{
-		this.producer.save("Camisa", "Camisa vermelha");
-	}
+	//@Override
+	//public void run(String... args) throws Exception{
+	//	this.producer.save("Blusa", "Blusa Azul");
+	//}
 
 }
